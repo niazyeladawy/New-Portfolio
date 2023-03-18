@@ -35,19 +35,36 @@ const Navbar = () => {
         <nav className={`${styles.navbar} ${scrolled ? styles.navbarscrolled : ''}`}>
             <div className='container'  >
                 <div className={styles.navbar_wrapper}>
-                    <Link className='logo' href='/'><Image src={logo} className={styles.logo} width={50} alt="logo" /></Link>
-                    <div className={styles.links}>
+                    <Link className='logo' href='/'>
+                        <Image src={logo} className={styles.logo} width={50} alt="Logo" />
+                    </Link>
+                    <nav className={styles.links}>
                         <ul className={styles.links_ul}>
-                            <li><Link href='/'>Home</Link></li>
-                            <li><Link href='/about'>About</Link></li>
-                            <li><Link href='/contact'>Contact</Link></li>
+                            <li>
+                                <Link href='/' aria-label="Go to home page">Home</Link>
+                            </li>
+                            <li>
+                                <Link href='/about' aria-label="Go to about page">About</Link>
+                            </li>
+                            <li>
+                                <Link href='/contact' aria-label="Go to contact page">Contact</Link>
+                            </li>
                         </ul>
                         <ul className={styles.socials}>
-                            <li><a target={'_blank'} href={data?.socials.Github.link}><FontAwesomeIcon icon={faGithub} /></a></li>
-                            <li><a target={'_blank'} href={data?.socials.Linkedin.link}><FontAwesomeIcon icon={faLinkedinIn} /></a></li>
+                            <li>
+                                <a target={'_blank'} href={data?.socials.Github.link} aria-label="Go to Github profile">
+                                    <FontAwesomeIcon icon={faGithub} />
+                                </a>
+                            </li>
+                            <li>
+                                <a target={'_blank'} href={data?.socials.Linkedin.link} aria-label="Go to LinkedIn profile">
+                                    <FontAwesomeIcon icon={faLinkedinIn} />
+                                </a>
+                            </li>
                         </ul>
-                    </div>
+                    </nav>
                 </div>
+
             </div>
         </nav>
     )

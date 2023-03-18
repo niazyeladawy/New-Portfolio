@@ -14,7 +14,7 @@ const About = () => {
         if (!data) {
             fetchData();
         }
-    }, [data, fetchData]);
+    }, []);
 
 
 

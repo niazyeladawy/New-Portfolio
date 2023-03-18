@@ -14,7 +14,7 @@ const Home = () => {
 
   useEffect(() => {
     fetchData();
-  }, [data, fetchData]);
+  }, []);
 
   return (
 
@@ -32,7 +32,7 @@ const Home = () => {
         </>
       ) : (
         <div className='loader-wrapper'>
-          <span class="loader"></span>
+          <span className="loader"></span>
         </div>
       )}
 

@@ -1,0 +1,27 @@
+.main_content{
+    margin-top: 140px;
+    display: grid;
+    grid-row-gap: 90px;
+    grid-template-columns: repeat(6,auto);
+    align-items: center;
+    justify-content: space-between;
+}
+.img_cont{
+    width: 120px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+section.skills  .main-content .img-cont img{
+    width: 100%;
+    object-fit: contain;
+}
+
+
+@media screen and (max-width : 768px) {
+    .main_content{
+        grid-template-columns: repeat(3,auto);
+        grid-row-gap: 50px;
+
+    }
+}

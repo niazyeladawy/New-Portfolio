@@ -27,9 +27,10 @@ const Home = () => {
       {data ? (
         <>
           <HomeHeader />
-          <Skills />
+          
           <RecentWork />
           <Projects projectsData={data?.projects} />
+          <Skills />
         </>
       ) : (
         <div className='loader-wrapper'>

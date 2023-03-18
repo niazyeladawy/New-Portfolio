@@ -25,8 +25,8 @@ const Footer = () => {
                             </li>
                         </ul>
                         <ul >
-                            <li><a target={'_blank'} href={data?.socials.Github.link}><FontAwesomeIcon icon={faGithub} /></a></li>
-                            <li><a target={'_blank'} href={data?.socials.Linkedin.link}><FontAwesomeIcon icon={faLinkedinIn} /></a></li>
+                            <li><a target={'_blank'} aria-label="Go to Github profile" href={data?.socials.Github.link}><FontAwesomeIcon icon={faGithub} /></a></li>
+                            <li><a target={'_blank'} aria-label="Go to LinkedIn profile" href={data?.socials.Linkedin.link}><FontAwesomeIcon icon={faLinkedinIn} /></a></li>
                         </ul>
                     </div>
                 </div>

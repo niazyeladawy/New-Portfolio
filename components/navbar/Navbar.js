@@ -36,7 +36,7 @@ const Navbar = () => {
             <div className='container'  >
                 <div className={styles.navbar_wrapper}>
                     <Link className='logo' href='/'>
-                        <Image src={logo} className={styles.logo} width={50} alt="Logo" />
+                        <Image  src={logo} className={styles.logo} width={50} alt="Logo" priority="eager" />
                     </Link>
                     <nav className={styles.links}>
                         <ul className={styles.links_ul}>

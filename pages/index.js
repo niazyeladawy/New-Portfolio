@@ -20,6 +20,7 @@ const Home = () => {
 
     <>
       <Head>
+        <meta name="description" content="Welcome to Niazy Eladawy Portfolio Homepage" />
         <title>Home</title>
       </Head>
 

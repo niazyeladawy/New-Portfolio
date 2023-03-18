@@ -22,7 +22,9 @@ const About = () => {
 
         <>
             <Head>
+                <meta name="description" content="Welcome to Niazy Eladawy Portfolio About me" />
                 <title>About</title>
+
             </Head>
             {data ? (<main>
                 <section>

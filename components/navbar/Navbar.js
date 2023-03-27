@@ -6,12 +6,17 @@ import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import Link from 'next/link';
 import Image from 'next/image';
 import { ResumeDataContext } from '@/context/ResumeContext';
+import { useRouter } from 'next/router';
 
 
 const Navbar = () => {
 
     const { data } = useContext(ResumeDataContext)
     const [scrolled, setscrolled] = useState(false);
+
+    const router = useRouter()
+
+    console.log('router',router)
 
 
     useEffect(() => {
@@ -41,13 +46,13 @@ const Navbar = () => {
                     <nav className={styles.links}>
                         <ul className={styles.links_ul}>
                             <li>
-                                <Link href='/' aria-label="Go to home page">Home</Link>
+                                <Link  className={router.pathname == "/" ? "activelink" : ""}  href='/' aria-label="Go to home page">Home</Link>
                             </li>
                             <li>
-                                <Link href='/about' aria-label="Go to about page">About</Link>
+                                <Link className={router.pathname == "/about" ? "activelink" : ""} href='/about' aria-label="Go to about page">About</Link>
                             </li>
                             <li>
-                                <Link href='/contact' aria-label="Go to contact page">Contact</Link>
+                                <Link className={router.pathname == "/contact" ? "activelink" : ""} href='/contact' aria-label="Go to contact page">Contact</Link>
                             </li>
                         </ul>
                         <ul className={styles.socials}>

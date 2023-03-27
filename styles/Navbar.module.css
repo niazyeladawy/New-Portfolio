@@ -28,7 +28,10 @@
     display: flex;
     gap: 65px;
 }
-
+.links_ul  li a:hover{
+    color: #000;
+    border-bottom: 1px solid  #42446E;
+}
 .socials {
     gap: 20px;
     display: flex;

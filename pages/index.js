@@ -16,6 +16,8 @@ const Home = () => {
     fetchData();
   }, []);
 
+
+
   return (
 
     <>
@@ -28,7 +30,7 @@ const Home = () => {
         <>
           <HomeHeader />
           
-          <RecentWork />
+          <RecentWork recentWorkData={data?.recentWork} />
           <Projects projectsData={data?.projects} />
           <Skills />
         </>

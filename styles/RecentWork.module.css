@@ -27,12 +27,13 @@
     background-color: #141C3A;
     top: 0;
     left: 0;
-    padding: 0 2rem;
+    padding: 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     opacity: 0;
+    width: 100%;
 }
 
 .item:hover .overlay{

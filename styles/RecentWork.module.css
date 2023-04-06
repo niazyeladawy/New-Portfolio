@@ -27,7 +27,6 @@
     background-color: #141C3A;
     top: 0;
     left: 0;
-    padding: 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,6 +42,7 @@
     margin-bottom: 20px;
     text-align: center;
     color: #fff;
+    padding: 0 30px;
 }
 
 .overlay a{

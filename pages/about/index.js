@@ -32,7 +32,11 @@ const About = () => {
                         <div className={styles.main}>
                             <div className={styles.head}>
                                 <h2>About Me</h2>
-                                <p>The Generator App is an online tool that helps you to export ready-made templates reGady to work as your future website. It helps you to combine slides, panels and other components and export it as a set of static files: HTML/CSS/JS.</p>
+                                <p>I am a Front-end developer (React JS) with a UX/UI design background with 1.5+ years experience and flair for
+                                    creating elegant solutions, Experience with all stages of the development cycle for
+                                    dynamic Web projects. Proficient in HTML, CSS, JavaScript, ReactJS, modern
+                                    libraries, and frameworks.
+                                </p>
                             </div>
 
                             <Experinece eData={data?.experince} />

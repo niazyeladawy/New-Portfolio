@@ -11,7 +11,7 @@ const HomeHeader = () => {
                     <div>
                         <h1 className={styles.heading} > My name is
                             <span>Niazy Eladawy</span>
-                            I am Frontend Developer</h1>
+                            I am a Front-end developer (React JS)  with 1.5+ years experience </h1>
                     </div>
                     <div className={styles.img_wrapper}>
                         <Image width={350} height={350} alt="profilepic" className={styles.profileimg} src={profile}/>

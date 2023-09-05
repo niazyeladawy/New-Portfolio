@@ -11,6 +11,7 @@ import firebaseimg from '../../public/skills/firebase.png'
 import muiimg from '../../public/skills/mui.png'
 import tailwindimg from '../../public/skills/vscode-icons_file-type-tailwind.svg'
 import jqueryimg from '../../public/skills/jquery-10-1175155.webp'
+import socketimg from '../../public/skills/socket.svg'
 import Image from 'next/image'
 import styles from '../../styles/Skills.module.css'
 
@@ -56,8 +57,12 @@ const Skills = () => {
                         <Image width={120} src={tailwindimg} alt="" />
                     </div>
                     <div className={styles.img_cont}>
+                        <Image width={120} src={socketimg} alt="" />
+                    </div>
+                    <div className={styles.img_cont}>
                         <Image width={120} src={jqueryimg} alt="" />
                     </div>
+
                 </div>
             </div>
         </section>

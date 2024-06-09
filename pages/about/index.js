@@ -32,7 +32,7 @@ const About = () => {
                         <div className={styles.main}>
                             <div className={styles.head}>
                                 <h2>About Me</h2>
-                                <p>I am a Front-end developer (React JS) with a UX/UI design background with {data?.year}+ years experience and flair for
+                                <p>I am a Front-end developer (React JS) with a UX/UI design background with {data?.years}+ years experience and flair for
                                     creating elegant solutions, Experience with all stages of the development cycle for
                                     dynamic Web projects. Proficient in HTML, CSS, JavaScript, ReactJS, modern
                                     libraries, and frameworks.

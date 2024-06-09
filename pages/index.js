@@ -28,7 +28,7 @@ const Home = () => {
 
       {data ? (
         <>
-          <HomeHeader />
+          <HomeHeader years={data?.years} />
           
           <RecentWork recentWorkData={data?.recentWork} />
           <Projects projectsData={data?.projects} />

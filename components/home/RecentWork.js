@@ -5,6 +5,9 @@ import Image from 'next/image';
 import styles from '../../styles/RecentWork.module.css'
 
 const RecentWork = ({ recentWorkData }) => {
+        const reversedWorkData = [...recentWorkData].reverse();
+
+    
     return (
         <section className='recent-work'>
             <div className='container'  >
@@ -14,7 +17,7 @@ const RecentWork = ({ recentWorkData }) => {
                 <div className={styles.main_cont}>
 
                     {
-                        recentWorkData?.map((item) => {
+                        reversedWorkData?.map((item) => {
                             return (
                                 <div className={styles.item} key={item.id}>
                                     <div className={styles.item_wrapper}>

@@ -18,9 +18,14 @@
 }
 
 .heading {
-    font-size: 58px;
-    line-height: 70px;
+    font-size: 40px;
+    line-height: 50px;
     color: #42446E;
+}
+.heading b{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .heading span {

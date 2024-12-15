@@ -1,27 +1,49 @@
-.main_content{
+.main_content {
     margin-top: 140px;
     display: grid;
     grid-row-gap: 90px;
-    grid-template-columns: repeat(6,auto);
+    grid-template-columns: repeat(6, auto);
     align-items: center;
     justify-content: space-between;
 }
-.img_cont{
+
+.img_cont {
     width: 120px;
     height: 100%;
     display: flex;
     align-items: center;
 }
-section.skills  .main-content .img-cont img{
+
+section.skills .main-content .img-cont img {
     width: 100%;
     object-fit: contain;
 }
 
+.skills_wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+@media screen and (max-width : 1200px) {
+
+    .skills_wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
 @media screen and (max-width : 768px) {
-    .main_content{
-        grid-template-columns: repeat(3,auto);
+    .main_content {
+        grid-template-columns: repeat(3, auto);
         grid-row-gap: 50px;
 
     }
+    .skills_wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
+@media screen and (max-width : 500px) {
+  
+    .skills_wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+

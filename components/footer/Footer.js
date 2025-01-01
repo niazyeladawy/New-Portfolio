@@ -4,14 +4,10 @@ import Link from 'next/link'
 import React, { useContext } from 'react'
 import logo from '../../public/logo.png'
 import { faGithub, faLinkedinIn, } from "@fortawesome/free-brands-svg-icons";
-import { ResumeDataContext } from '@/context/ResumeContext'
 
 
 const Footer = () => {
-    const { data } = useContext(ResumeDataContext)
-
-    console.log("ddddd",data);
-
+    
 
     return (
         <footer>

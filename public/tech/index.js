@@ -1,26 +1,26 @@
 
 
-import css from "./css.png";
-import docker from "./docker.png";
-import figma from "./figma.png";
-import git from "./git.png";
-import html from "./html.png";
-import javascript from "./javascript.png";
-import mongodb from "./mongodb.png";
-import nodejs from "./nodejs.png";
-import reactjs from "./reactjs.png";
-import redux from "./redux.png";
-import tailwind from "./tailwind.png";
-import typescript from "./typescript.png";
-import threejs from "./threejs.svg";
-import vue from "./Vue.png";
-import nuxt from "./NuxtJS_Logo-removebg-preview.png";
-import bootstrap from "./bootstrap-logo-shadow.png";
-import sass from "./logos_sass.svg";
-import firebase from "./firebase.png";
+import css from "./css.webp";
+import docker from "./docker.webp";
+import figma from "./figma.webp";
+import git from "./git.webp";
+import html from "./html.webp";
+import javascript from "./javascript.webp";
+import mongodb from "./mongodb.webp";
+import nodejs from "./nodejs.webp";
+import reactjs from "./reactjs.webp";
+import redux from "./redux.webp";
+import tailwind from "./tailwind.webp";
+import typescript from "./typescript.webp";
+import threejs from "./threejs.webp";
+import vue from "./Vue.webp";
+import nuxt from "./NuxtJS_Logo-removebg-preview.webp";
+import bootstrap from "./bootstrap-logo-shadow.webp";
+import sass from "./logos_sass.webp";
+import firebase from "./firebase.webp";
 
 
-import next from './next.png'
+import next from './next.webp'
 
 export {
   

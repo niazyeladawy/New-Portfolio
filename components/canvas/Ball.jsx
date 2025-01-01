@@ -8,7 +8,6 @@ import CanvasLoader from '../Loader'
 
 const Ball = ({ icon}) => {
 
-  console.log(icon);
   const [decal] = useTexture([icon.src])
   return (
    <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>

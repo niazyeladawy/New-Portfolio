@@ -3,9 +3,7 @@ import React from 'react'
 import profile from '../../public/profile.jpg'
 import styles from '../../styles/HomeHeader.module.css'
 
-const HomeHeader = ({years,text}) => {
-
-
+const HomeHeader = ({text}) => {
     return (
         <section className='home-header'>
             <div className='container'  >
@@ -16,7 +14,7 @@ const HomeHeader = ({years,text}) => {
                             {text} </h1>
                     </div>
                     <div className={styles.img_wrapper}>
-                        <Image width={350} height={350} alt="profilepic" className={styles.profileimg} src={profile}/>
+                        <Image width={350} height={350} alt="profilepic" className={styles.profileimg} src={profile} loading='eager' />
                     </div>
                 </div>
                 

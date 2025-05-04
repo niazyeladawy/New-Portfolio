@@ -56,8 +56,8 @@ const Home = ({ data }) => {
           <>
             <HomeHeader years={data?.years} text={data?.hero} />
             <RecentWork recentWorkData={data?.recentWork} />
-            <Projects projectsData={data?.projects} />
             <Tech />
+            <Projects projectsData={data?.projects} />
           </>
         ) : (
           <div className="loader-wrapper">

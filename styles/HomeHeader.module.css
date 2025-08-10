@@ -8,11 +8,11 @@
     border-radius: 50%;
 }
 
-.img_wrapper {
+/* .img_wrapper {
     background: linear-gradient(0, #13B0F5 -2.06%, #E70FAA 100%);
     border-radius: 50%;
     padding: 10px;
-}
+} */
 .img_wrapper  img{
     min-width: 350px;
 }
@@ -30,9 +30,9 @@
 
 .heading span {
     display: block;
-    background: linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%);
+    /* background: linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
 }
 
 @media screen and (max-width : 768px) {

@@ -24,6 +24,7 @@ const Ball = ({ icon}) => {
 }
 
 const BallCanvas = ({icon}) => {
+const isMobile = /Mobi|Android/i.test(navigator.userAgent);
 
 
   return (
@@ -31,6 +32,9 @@ const BallCanvas = ({icon}) => {
       frameloop='demand'
       gl={{ preserveDrawingBuffer: true }}
       style={{ width: '200px', height: '200px' }}
+          pixelRatio={isMobile ? 1 : window.devicePixelRatio}
+
+      
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />

@@ -10,7 +10,7 @@ const HomeHeader = ({text}) => {
                 <div className={styles.main}>
                     <div>
                         <h1 className={styles.heading} > 
-                           <b>Hi, I’m  <span> Niazy Eladawy</span></b>
+                           
                             {text} </h1>
                     </div>
                     <div className={styles.img_wrapper}>

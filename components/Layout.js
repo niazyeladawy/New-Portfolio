@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
   }, []);
 
   return (
-    <div className={poppins.className + ' layout-wrapper'}>
+<div className={poppins.className + ' ' + 'layout-wrapper'}>
       <Navbar />
       {children}
       <Footer />

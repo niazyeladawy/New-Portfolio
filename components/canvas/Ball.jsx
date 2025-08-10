@@ -1,7 +1,7 @@
 'use client'
 import { Decal , Float, OrbitControls, Preload, useTexture } from "@react-three/drei"
 import { Canvas } from "@react-three/fiber"
-import { Suspense } from "react"
+import { Suspense, useEffect, useState } from "react"
 
 import CanvasLoader from '../Loader'
 
@@ -24,17 +24,21 @@ const Ball = ({ icon}) => {
 }
 
 const BallCanvas = ({icon}) => {
-const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+ const [isMobile, setIsMobile] = useState(false);
+  const [pixelRatio, setPixelRatio] = useState(1);
 
+  useEffect(() => {
+    setIsMobile(/Mobi|Android/i.test(navigator.userAgent));
+    setPixelRatio(window.devicePixelRatio || 1);
+  }, []);
 
   return (
     <Canvas
       frameloop='demand'
       gl={{ preserveDrawingBuffer: true }}
       style={{ width: '200px', height: '200px' }}
-          pixelRatio={isMobile ? 1 : window.devicePixelRatio}
+            dpr={isMobile ? 1 : pixelRatio}
 
-      
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />

@@ -12,10 +12,44 @@ import muiimg from '../../public/skills/mui.png'
 import tailwindimg from '../../public/skills/vscode-icons_file-type-tailwind.svg'
 import jqueryimg from '../../public/skills/jquery-10-1175155.webp'
 import socketimg from '../../public/skills/socket.svg'
+import typescript from '../../public/skills/typescript.svg'
+import vueimg from '../../public/skills/vue.svg';
+import nuxtimg from '../../public/skills/nuxt.webp';
+import nodejsimg from '../../public/skills/nodejs.svg';
+import expressimg from '../../public/skills/express.png';
+
 import Image from 'next/image'
 import styles from '../../styles/Skills.module.css'
 
 const Skills = () => {
+
+    const skills = [
+        // Front-end core
+        { src: htmlimg, alt: 'HTML' },
+        { src: cssimg, alt: 'CSS' },
+        { src: jsimg, alt: 'JavaScript' },
+        { src: typescript, alt: 'TypeScript' },
+
+        // Frameworks & libraries - front-end
+        { src: reactimg, alt: 'React' },
+        { src: nextimg, alt: 'Next.js' },
+        { src: vueimg, alt: 'Vue.js' },
+        { src: nuxtimg, alt: 'Nuxt.js' },
+        { src: reduximg, alt: 'Redux' },
+        { src: jqueryimg, alt: 'jQuery' },
+
+        // Styling
+        { src: bootstrapimg, alt: 'Bootstrap' },
+        { src: sassimg, alt: 'Sass' },
+        { src: tailwindimg, alt: 'Tailwind CSS' },
+        { src: muiimg, alt: 'Material UI' },
+
+        // Back-end
+        { src: nodejsimg, alt: 'Node.js' },
+        { src: expressimg, alt: 'Express.js' },
+        { src: firebaseimg, alt: 'Firebase' },
+        { src: socketimg, alt: 'Socket.io' },
+    ];
     return (
         <section className='skills'>
             <div className='container'>
@@ -23,46 +57,11 @@ const Skills = () => {
                 <p className='text-center'>Technologies I’ve been working with recently</p>
 
                 <div className={styles.main_content}>
-                    <div className={styles.img_cont}>
-                        <Image width={120} src={htmlimg} alt="" />
-                    </div>
-                    <div className={styles.img_cont}>
-                        <Image width={120} src={cssimg} alt="" />
-                    </div>
-                    <div className={styles.img_cont}>
-                        <Image width={120} src={jsimg} alt="" />
-                    </div>
-                    <div className={styles.img_cont}>
-                        <Image width={120} src={reactimg} alt="" />
-                    </div>
-                    <div className={styles.img_cont}>
-                        <Image width={120} src={reduximg} alt="" />
-                    </div>
-                    <div className={styles.img_cont}>
-                        <Image width={120} src={bootstrapimg} alt="" />
-                    </div>
-                    <div className={styles.img_cont}>
-                        <Image width={120} src={nextimg} alt="" />
-                    </div>
-                    <div className={styles.img_cont}>
-                        <Image width={120} src={sassimg} alt="" />
-                    </div>
-                    <div className={styles.img_cont}>
-                        <Image width={120} src={firebaseimg} alt="" />
-                    </div>
-                    <div className={styles.img_cont}>
-                        <Image width={120} src={muiimg} alt="" />
-                    </div>
-                    <div className={styles.img_cont}>
-                        <Image width={120} src={tailwindimg} alt="" />
-                    </div>
-                    <div className={styles.img_cont}>
-                        <Image width={120} src={socketimg} alt="" />
-                    </div>
-                    <div className={styles.img_cont}>
-                        <Image width={120} src={jqueryimg} alt="" />
-                    </div>
-
+                    {skills.map(({ src, alt }) => (
+                        <div key={alt} className={styles.img_cont}>
+                            <Image width={120} src={src} alt={alt} />
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>

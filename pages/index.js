@@ -56,7 +56,8 @@ const Home = ({ data }) => {
           <>
             <HomeHeader years={data?.years} text={data?.hero} />
             <RecentWork recentWorkData={data?.recentWork} />
-            <Tech />
+            {/* <Tech /> */}
+            <Skills/>
             <Projects projectsData={data?.projects} />
           </>
         ) : (

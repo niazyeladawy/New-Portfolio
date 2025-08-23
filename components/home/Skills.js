@@ -13,7 +13,7 @@ import tailwindimg from '../../public/skills/vscode-icons_file-type-tailwind.svg
 import jqueryimg from '../../public/skills/jquery-10-1175155.webp'
 import socketimg from '../../public/skills/socket.svg'
 import typescript from '../../public/skills/typescript.svg'
-import vueimg from '../../public/skills/vue.svg';
+import vueimg from '../../public/skills/Vue1.svg';
 import nuxtimg from '../../public/skills/nuxt.webp';
 import nodejsimg from '../../public/skills/nodejs.svg';
 import expressimg from '../../public/skills/express.png';
